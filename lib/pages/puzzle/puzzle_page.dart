@@ -25,7 +25,7 @@ class _PuzzlePageState extends State<PuzzlePage> {
       body: Stack(
         children: [
           Positioned(
-            top: FigmaHelper.fromFigmaHeight(context, 136-48),
+            top: FigmaHelper.fromFigmaHeight(context, 136-68),
             left: FigmaHelper.fromFigmaWidth(context, 16),
             child: SizedBox(
               width: FigmaHelper.fromFigmaWidth(context, 130),
@@ -45,7 +45,7 @@ class _PuzzlePageState extends State<PuzzlePage> {
           ),
 
           Positioned(
-            top: FigmaHelper.fromFigmaHeight(context, 165-48),
+            top: FigmaHelper.fromFigmaHeight(context, 165-68),
             left: FigmaHelper.fromFigmaWidth(context, 16),
             child: SizedBox(
               width: FigmaHelper.fromFigmaWidth(context, 300),
@@ -65,7 +65,7 @@ class _PuzzlePageState extends State<PuzzlePage> {
           ),
 
           Positioned(
-            top: FigmaHelper.fromFigmaHeight(context, 448.92-48),
+            top: FigmaHelper.fromFigmaHeight(context, 448.92-68),
             left: FigmaHelper.fromFigmaWidth(context, 215.93),
             child: Transform.rotate(
               angle: -10.57 * math.pi / 180,
@@ -89,7 +89,7 @@ class _PuzzlePageState extends State<PuzzlePage> {
           ),
 
           Positioned(
-            top: FigmaHelper.fromFigmaHeight(context, 305.3-48),
+            top: FigmaHelper.fromFigmaHeight(context, 305.3-68),
             left: FigmaHelper.fromFigmaWidth(context, 42),
             child: Transform.rotate(
               angle: 8.28 * math.pi / 180,
@@ -113,7 +113,7 @@ class _PuzzlePageState extends State<PuzzlePage> {
           ),
 
           Positioned(
-            top: FigmaHelper.fromFigmaHeight(context, 359.23-48),
+            top: FigmaHelper.fromFigmaHeight(context, 359.23-68),
             left: FigmaHelper.fromFigmaWidth(context, 130.17),
             child: Transform.rotate(
               angle: 3.02 * math.pi / 180,
@@ -137,7 +137,7 @@ class _PuzzlePageState extends State<PuzzlePage> {
           ),
 
           Positioned(
-            top: FigmaHelper.fromFigmaHeight(context, 532.33-48),
+            top: FigmaHelper.fromFigmaHeight(context, 532.33-68),
             left: FigmaHelper.fromFigmaWidth(context, -37),
             child: Transform.rotate(
               angle: -0.77 * math.pi / 180,
@@ -161,7 +161,7 @@ class _PuzzlePageState extends State<PuzzlePage> {
           ),
 
           Positioned(
-            top: FigmaHelper.fromFigmaHeight(context, 478-48),
+            top: FigmaHelper.fromFigmaHeight(context, 478-68),
             left: FigmaHelper.fromFigmaWidth(context, 195.69),
             child: Transform.rotate(
               angle: 11.25 * math.pi / 180,
@@ -185,7 +185,7 @@ class _PuzzlePageState extends State<PuzzlePage> {
           ),
 
           Positioned(
-            top: FigmaHelper.fromFigmaHeight(context, 491.52-48),
+            top: FigmaHelper.fromFigmaHeight(context, 491.52-68),
             left: FigmaHelper.fromFigmaWidth(context, 45.29),
             child: Transform.rotate(
               angle: -19.02 * math.pi / 180,
@@ -219,7 +219,7 @@ class _PuzzlePageState extends State<PuzzlePage> {
           ),
 
           Positioned(
-            top: FigmaHelper.fromFigmaHeight(context, 288-48),
+            top: FigmaHelper.fromFigmaHeight(context, 288-68),
             left: FigmaHelper.fromFigmaWidth(context, 234.21),
             child: Transform.rotate(
               angle: 23.91 * math.pi / 180,
