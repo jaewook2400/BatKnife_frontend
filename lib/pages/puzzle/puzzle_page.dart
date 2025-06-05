@@ -20,7 +20,7 @@ class _PuzzlePageState extends State<PuzzlePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar(title: '퍼즐'),
+      appBar: CustomAppBar(title: '퍼즐즐'),
       body: Stack(
         children: [
           Positioned(
