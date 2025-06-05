@@ -21,10 +21,11 @@ class _PuzzlePageState extends State<PuzzlePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CustomAppBar(title: '퍼즐'),
+      backgroundColor: Colors.white,
       body: Stack(
         children: [
           Positioned(
-            top: FigmaHelper.fromFigmaHeight(context, 136),
+            top: FigmaHelper.fromFigmaHeight(context, 136-48),
             left: FigmaHelper.fromFigmaWidth(context, 16),
             child: SizedBox(
               width: FigmaHelper.fromFigmaWidth(context, 130),
@@ -44,10 +45,10 @@ class _PuzzlePageState extends State<PuzzlePage> {
           ),
 
           Positioned(
-            top: FigmaHelper.fromFigmaHeight(context, 165),
-            left: FigmaHelper.fromFigmaHeight(context, 16),
+            top: FigmaHelper.fromFigmaHeight(context, 165-48),
+            left: FigmaHelper.fromFigmaWidth(context, 16),
             child: SizedBox(
-              width: FigmaHelper.fromFigmaHeight(context, 300),
+              width: FigmaHelper.fromFigmaWidth(context, 300),
               height: FigmaHelper.fromFigmaHeight(context, 30),
               child: const Text(
                 '우리 가족의 사진 퍼즐',
@@ -62,17 +63,18 @@ class _PuzzlePageState extends State<PuzzlePage> {
               ),
             ),
           ),
+
           Positioned(
-            top: 448.92,
-            left: 215.93,
+            top: FigmaHelper.fromFigmaHeight(context, 448.92-48),
+            left: FigmaHelper.fromFigmaWidth(context, 215.93),
             child: Transform.rotate(
               angle: -10.57 * math.pi / 180,
               child: Container(
-                width: 153.94,
-                height: 188,
+                width: FigmaHelper.fromFigmaWidth(context, 153.94),
+                height: FigmaHelper.fromFigmaHeight(context, 188),
                 decoration: BoxDecoration(
                   color: Color(0xFFEBEBEB),
-                  borderRadius: BorderRadius.circular(6),
+                  borderRadius: BorderRadius.circular(FigmaHelper.fromFigmaWidth(context, 6)),
                   boxShadow: [
                     BoxShadow(
                       color: Color(0x40000000),
@@ -85,17 +87,18 @@ class _PuzzlePageState extends State<PuzzlePage> {
               ),
             ),
           ),
+
           Positioned(
-            top: 305.3,
-            left: 42,
+            top: FigmaHelper.fromFigmaHeight(context, 305.3-48),
+            left: FigmaHelper.fromFigmaWidth(context, 42),
             child: Transform.rotate(
               angle: 8.28 * math.pi / 180,
               child: Container(
-                width: 172.89,
-                height: 97.22,
+                width: FigmaHelper.fromFigmaWidth(context, 172.89),
+                height: FigmaHelper.fromFigmaHeight(context, 97.22),
                 decoration: BoxDecoration(
                   color: Color(0xFFEBEBEB),
-                  borderRadius: BorderRadius.circular(6),
+                  borderRadius: BorderRadius.circular(FigmaHelper.fromFigmaWidth(context, 6)),
                   boxShadow: [
                     BoxShadow(
                       color: Color(0x40000000),
@@ -108,17 +111,18 @@ class _PuzzlePageState extends State<PuzzlePage> {
               ),
             ),
           ),
+
           Positioned(
-            top: 359.23,
-            left: 130.17,
+            top: FigmaHelper.fromFigmaHeight(context, 359.23-48),
+            left: FigmaHelper.fromFigmaWidth(context, 130.17),
             child: Transform.rotate(
               angle: 3.02 * math.pi / 180,
               child: Container(
-                width: 150.48,
-                height: 188,
+                width: FigmaHelper.fromFigmaWidth(context, 150.48),
+                height: FigmaHelper.fromFigmaHeight(context, 188),
                 decoration: BoxDecoration(
                   color: Color(0xFFEBEBEB),
-                  borderRadius: BorderRadius.circular(6),
+                  borderRadius: BorderRadius.circular(FigmaHelper.fromFigmaWidth(context, 6)),
                   boxShadow: [
                     BoxShadow(
                       color: Color(0x40000000),
@@ -131,17 +135,18 @@ class _PuzzlePageState extends State<PuzzlePage> {
               ),
             ),
           ),
+
           Positioned(
-            top: 532.33,
-            left: -37,
+            top: FigmaHelper.fromFigmaHeight(context, 532.33-48),
+            left: FigmaHelper.fromFigmaWidth(context, -37),
             child: Transform.rotate(
               angle: -0.77 * math.pi / 180,
               child: Container(
-                width: 172.89,
-                height: 97.22,
+                width: FigmaHelper.fromFigmaWidth(context, 172.89),
+                height: FigmaHelper.fromFigmaHeight(context, 97.22),
                 decoration: BoxDecoration(
                   color: Color(0xFFEBEBEB),
-                  borderRadius: BorderRadius.circular(6),
+                  borderRadius: BorderRadius.circular(FigmaHelper.fromFigmaWidth(context, 6)),
                   boxShadow: [
                     BoxShadow(
                       color: Color(0x40000000),
@@ -154,17 +159,18 @@ class _PuzzlePageState extends State<PuzzlePage> {
               ),
             ),
           ),
+
           Positioned(
-            top: 478,
-            left: 195.69,
+            top: FigmaHelper.fromFigmaHeight(context, 478-48),
+            left: FigmaHelper.fromFigmaWidth(context, 195.69),
             child: Transform.rotate(
               angle: 11.25 * math.pi / 180,
               child: Container(
-                width: 125,
-                height: 188,
+                width: FigmaHelper.fromFigmaWidth(context, 125),
+                height: FigmaHelper.fromFigmaHeight(context, 188),
                 decoration: BoxDecoration(
                   color: Color(0xFFEBEBEB),
-                  borderRadius: BorderRadius.circular(6),
+                  borderRadius: BorderRadius.circular(FigmaHelper.fromFigmaWidth(context, 6)),
                   boxShadow: [
                     BoxShadow(
                       color: Color(0x40000000),
@@ -177,18 +183,19 @@ class _PuzzlePageState extends State<PuzzlePage> {
               ),
             ),
           ),
+
           Positioned(
-            top: 491.52,
-            left: 45.29,
+            top: FigmaHelper.fromFigmaHeight(context, 491.52-48),
+            left: FigmaHelper.fromFigmaWidth(context, 45.29),
             child: Transform.rotate(
               angle: -19.02 * math.pi / 180,
               child: Opacity(
                 opacity: 0.9,
                 child: Container(
-                  width: 145.84,
-                  height: 188,
+                  width: FigmaHelper.fromFigmaWidth(context, 145.84),
+                  height: FigmaHelper.fromFigmaHeight(context, 188),
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(6),
+                    borderRadius: BorderRadius.circular(FigmaHelper.fromFigmaWidth(context, 6)),
                     gradient: LinearGradient(
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
@@ -210,17 +217,18 @@ class _PuzzlePageState extends State<PuzzlePage> {
               ),
             ),
           ),
+
           Positioned(
-            top: 288,
-            left: 234.21,
+            top: FigmaHelper.fromFigmaHeight(context, 288-48),
+            left: FigmaHelper.fromFigmaWidth(context, 234.21),
             child: Transform.rotate(
               angle: 23.91 * math.pi / 180,
               child: Container(
-                width: 105.88,
-                height: 104.16,
+                width: FigmaHelper.fromFigmaWidth(context, 105.88),
+                height: FigmaHelper.fromFigmaHeight(context, 104.16),
                 decoration: BoxDecoration(
                   color: Color(0xFFEBEBEB),
-                  borderRadius: BorderRadius.circular(6),
+                  borderRadius: BorderRadius.circular(FigmaHelper.fromFigmaWidth(context, 6)),
                   boxShadow: [
                     BoxShadow(
                       color: Color(0x40000000),
@@ -233,6 +241,7 @@ class _PuzzlePageState extends State<PuzzlePage> {
               ),
             ),
           ),
+
 
         ],
       ),
