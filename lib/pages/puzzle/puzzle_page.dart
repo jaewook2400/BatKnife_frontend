@@ -8,7 +8,6 @@ import '../../widgets/custom_bottom_bar.dart';
 class PuzzlePage extends StatefulWidget {
   const PuzzlePage({super.key});
 
-
   @override
   State<PuzzlePage> createState() => _PuzzlePageState();
 }
@@ -16,26 +15,24 @@ class PuzzlePage extends StatefulWidget {
 class _PuzzlePageState extends State<PuzzlePage> {
   int _selectedIndex = 1;
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar(title: '퍼즐'),
+      appBar: const CustomAppBar(title: '퍼즐'),
       backgroundColor: Colors.white,
       body: Stack(
         children: [
           Positioned(
-            top: FigmaHelper.fromFigmaHeight(context, 136-48),
+            top: 48 + 12,
             left: FigmaHelper.fromFigmaWidth(context, 16),
             child: SizedBox(
               width: FigmaHelper.fromFigmaWidth(context, 130),
-              height: FigmaHelper.fromFigmaHeight(context, 21),
               child: const Text(
                 '2025년 1월 10일',
                 style: TextStyle(
                   fontFamily: 'Pretendard',
                   fontWeight: FontWeight.w400,
-                  fontSize: 16, // 텍스트는 필요 시 비율화 가능
+                  fontSize: 16,
                   height: 1.3125,
                   letterSpacing: -0.32,
                   color: Color(0xFF353535),
@@ -45,11 +42,10 @@ class _PuzzlePageState extends State<PuzzlePage> {
           ),
 
           Positioned(
-            top: FigmaHelper.fromFigmaHeight(context, 165-48),
+            top: 48 + 12 + 26,
             left: FigmaHelper.fromFigmaWidth(context, 16),
             child: SizedBox(
               width: FigmaHelper.fromFigmaWidth(context, 300),
-              height: FigmaHelper.fromFigmaHeight(context, 30),
               child: const Text(
                 '우리 가족의 사진 퍼즐',
                 style: TextStyle(
@@ -64,185 +60,13 @@ class _PuzzlePageState extends State<PuzzlePage> {
             ),
           ),
 
-          Positioned(
-            top: FigmaHelper.fromFigmaHeight(context, 448.92-48),
-            left: FigmaHelper.fromFigmaWidth(context, 215.93),
-            child: Transform.rotate(
-              angle: -10.57 * math.pi / 180,
-              child: Container(
-                width: FigmaHelper.fromFigmaWidth(context, 153.94),
-                height: FigmaHelper.fromFigmaHeight(context, 188),
-                decoration: BoxDecoration(
-                  color: Color(0xFFEBEBEB),
-                  borderRadius: BorderRadius.circular(FigmaHelper.fromFigmaWidth(context, 6)),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Color(0x40000000),
-                      offset: Offset(0, 4),
-                      blurRadius: 4,
-                      spreadRadius: 0,
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ),
-
-          Positioned(
-            top: FigmaHelper.fromFigmaHeight(context, 305.3-48),
-            left: FigmaHelper.fromFigmaWidth(context, 42),
-            child: Transform.rotate(
-              angle: 8.28 * math.pi / 180,
-              child: Container(
-                width: FigmaHelper.fromFigmaWidth(context, 172.89),
-                height: FigmaHelper.fromFigmaHeight(context, 97.22),
-                decoration: BoxDecoration(
-                  color: Color(0xFFEBEBEB),
-                  borderRadius: BorderRadius.circular(FigmaHelper.fromFigmaWidth(context, 6)),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Color(0x40000000),
-                      offset: Offset(0, 4),
-                      blurRadius: 4,
-                      spreadRadius: 0,
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ),
-
-          Positioned(
-            top: FigmaHelper.fromFigmaHeight(context, 359.23-48),
-            left: FigmaHelper.fromFigmaWidth(context, 130.17),
-            child: Transform.rotate(
-              angle: 3.02 * math.pi / 180,
-              child: Container(
-                width: FigmaHelper.fromFigmaWidth(context, 150.48),
-                height: FigmaHelper.fromFigmaHeight(context, 188),
-                decoration: BoxDecoration(
-                  color: Color(0xFFEBEBEB),
-                  borderRadius: BorderRadius.circular(FigmaHelper.fromFigmaWidth(context, 6)),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Color(0x40000000),
-                      offset: Offset(0, 4),
-                      blurRadius: 4,
-                      spreadRadius: 0,
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ),
-
-          Positioned(
-            top: FigmaHelper.fromFigmaHeight(context, 532.33-48),
-            left: FigmaHelper.fromFigmaWidth(context, -37),
-            child: Transform.rotate(
-              angle: -0.77 * math.pi / 180,
-              child: Container(
-                width: FigmaHelper.fromFigmaWidth(context, 172.89),
-                height: FigmaHelper.fromFigmaHeight(context, 97.22),
-                decoration: BoxDecoration(
-                  color: Color(0xFFEBEBEB),
-                  borderRadius: BorderRadius.circular(FigmaHelper.fromFigmaWidth(context, 6)),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Color(0x40000000),
-                      offset: Offset(0, 4),
-                      blurRadius: 4,
-                      spreadRadius: 0,
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ),
-
-          Positioned(
-            top: FigmaHelper.fromFigmaHeight(context, 478-48),
-            left: FigmaHelper.fromFigmaWidth(context, 195.69),
-            child: Transform.rotate(
-              angle: 11.25 * math.pi / 180,
-              child: Container(
-                width: FigmaHelper.fromFigmaWidth(context, 125),
-                height: FigmaHelper.fromFigmaHeight(context, 188),
-                decoration: BoxDecoration(
-                  color: Color(0xFFEBEBEB),
-                  borderRadius: BorderRadius.circular(FigmaHelper.fromFigmaWidth(context, 6)),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Color(0x40000000),
-                      offset: Offset(0, 4),
-                      blurRadius: 4,
-                      spreadRadius: 0,
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ),
-
-          Positioned(
-            top: FigmaHelper.fromFigmaHeight(context, 491.52-48),
-            left: FigmaHelper.fromFigmaWidth(context, 45.29),
-            child: Transform.rotate(
-              angle: -19.02 * math.pi / 180,
-              child: Opacity(
-                opacity: 0.9,
-                child: Container(
-                  width: FigmaHelper.fromFigmaWidth(context, 145.84),
-                  height: FigmaHelper.fromFigmaHeight(context, 188),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(FigmaHelper.fromFigmaWidth(context, 6)),
-                    gradient: LinearGradient(
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
-                      colors: [
-                        Color(0xFFFFFFFF),
-                        Color(0xFFFAE3FF),
-                      ],
-                    ),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Color(0x40000000),
-                        offset: Offset(0, 4),
-                        blurRadius: 4,
-                        spreadRadius: 0,
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-          ),
-
-          Positioned(
-            top: FigmaHelper.fromFigmaHeight(context, 288-48),
-            left: FigmaHelper.fromFigmaWidth(context, 234.21),
-            child: Transform.rotate(
-              angle: 23.91 * math.pi / 180,
-              child: Container(
-                width: FigmaHelper.fromFigmaWidth(context, 105.88),
-                height: FigmaHelper.fromFigmaHeight(context, 104.16),
-                decoration: BoxDecoration(
-                  color: Color(0xFFEBEBEB),
-                  borderRadius: BorderRadius.circular(FigmaHelper.fromFigmaWidth(context, 6)),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Color(0x40000000),
-                      offset: Offset(0, 4),
-                      blurRadius: 4,
-                      spreadRadius: 0,
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ),
-
-
+          _puzzleCard(context, 448.92, 215.93, 153.94, 188, -10.57),
+          _puzzleCard(context, 305.3, 42, 172.89, 97.22, 8.28),
+          _puzzleCard(context, 359.23, 110.17, 150.48, 188, 3.02),
+          _puzzleCard(context, 532.33, -37, 172.89, 97.22, -0.77),
+          _puzzleCard(context, 520, 150.69, 125, 188, 11.25),
+          _puzzleCard(context, 491.52, 45.29, 145.84, 188, -19.02, gradient: true),
+          _puzzleCard(context, 288, 200.21, 105.88, 104.16, 23.91),
         ],
       ),
       bottomNavigationBar: CustomBottomBar(
@@ -252,6 +76,53 @@ class _PuzzlePageState extends State<PuzzlePage> {
             _selectedIndex = index;
           });
         },
+      ),
+    );
+  }
+
+  Widget _puzzleCard(
+      BuildContext context,
+      double figmaTop,
+      double figmaLeft,
+      double figmaWidth,
+      double figmaHeight,
+      double angleDeg, {
+        bool gradient = false,
+      }) {
+    return Positioned(
+      top: 48 + FigmaHelper.fromFigmaHeight(context, figmaTop - 136),
+      left: FigmaHelper.fromFigmaWidth(context, figmaLeft),
+      child: Transform.rotate(
+        angle: angleDeg * math.pi / 180,
+        child: Opacity(
+          opacity: gradient ? 0.9 : 1.0,
+          child: Container(
+            width: FigmaHelper.fromFigmaWidth(context, figmaWidth),
+            height: FigmaHelper.fromFigmaHeight(context, figmaHeight),
+            decoration: BoxDecoration(
+              color: gradient ? null : const Color(0xFFEBEBEB),
+              gradient: gradient
+                  ? const LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [
+                  Color(0xFFFFFFFF),
+                  Color(0xFFFAE3FF),
+                ],
+              )
+                  : null,
+              borderRadius:
+              BorderRadius.circular(FigmaHelper.fromFigmaWidth(context, 6)),
+              boxShadow: const [
+                BoxShadow(
+                  color: Color(0x40000000),
+                  offset: Offset(0, 4),
+                  blurRadius: 4,
+                ),
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }

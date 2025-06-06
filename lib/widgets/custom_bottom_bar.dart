@@ -32,8 +32,10 @@ class CustomBottomBar extends StatelessWidget {
             backgroundColor: Colors.transparent,
             elevation: 0,
             type: BottomNavigationBarType.fixed,
-            selectedItemColor: Colors.black,
-            unselectedItemColor: Colors.grey,
+            selectedItemColor: Color(0xFFF4C3FF),
+            unselectedItemColor: Color(0xFFD5D5D5),
+            selectedLabelStyle: TextStyle(fontSize: 9),
+            unselectedLabelStyle: TextStyle(fontSize: 9),
             items: const [
               BottomNavigationBarItem(
                 icon: Icon(Icons.home),
